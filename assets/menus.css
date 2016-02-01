@@ -34,6 +34,16 @@ nav ul::after {
 	clear: both;
 }
 
+/** maintain hover color on main menu */
+nav > ul li:hover {
+	background-color: rgba(0, 102, 102, .8);
+}
+
+/** Show hiding submenus **/
+nav ul li:hover > ul {
+	display: block;
+}
+
 
 nav ul li a {
 	display: inline-block;
@@ -47,6 +57,16 @@ nav ul li a {
 nav ul li a:hover {
 	background-color: #339999;
 }
+
+/** Styling submenus and hiding */
+
+nav ul ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+	background-color: rgba(0, 102, 102, .8);
+}
+
 
 @media screen and (max-width: 750px) {
 	
