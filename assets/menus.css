@@ -21,9 +21,6 @@ nav ul {
 	margin: 0; padding: 0;
 }
 
-nav > ul > li {
-	float: left;
-}
 
 
 /*cleafix for nav ul*/
@@ -67,6 +64,36 @@ nav ul ul {
 	background-color: rgba(0, 102, 102, .8);
 }
 
+/* position third level element on the same level the parent */
+nav ul ul li {
+	position: relative;	
+}
+
+/** Styling third level submenu */
+
+nav ul ul ul {
+	left: 100%;
+	top: 0;
+}
+
+
+/*top level*/
+
+nav > ul {
+	padding-left: 35px;
+}
+
+nav > ul > li {
+	float: left;
+}
+
+/*Change width from 125px to width according text*/
+
+nav > ul > li > a {
+	padding: 10px 20px 15px 20px;
+	width: auto;
+}
+
 
 @media screen and (max-width: 750px) {
 	
@@ -74,5 +101,18 @@ nav ul ul {
 	article { width: 100%; float: none; margin-bottom: 40px; }
 	article div { margin: 0px 40px; padding: 0px 0px 30px 0px; border-right: none; border-bottom: 1px solid #555; }
 	aside { width: 100%; float: none; }
+
+	nav {
+		padding: 70px 0 0 10px;
+	}
+
+	nav > ul {
+		padding-left: 0px;
+		padding-right: 20px;
+	}
+
+	nav > ul > li > a {
+		padding: 8px 12px 10px 12px;
+	}
 
 }
