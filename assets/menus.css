@@ -67,6 +67,18 @@ nav ul ul {
 	background-color: rgba(0, 102, 102, .8);
 }
 
+/* position third level element on the same level the parent */
+nav ul ul li {
+	position: relative;	
+}
+
+/** Styling third level submenu */
+
+nav ul ul ul {
+	left: 100%;
+	top: 0;
+}
+
 
 @media screen and (max-width: 750px) {
 	
