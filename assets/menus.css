@@ -15,7 +15,7 @@ aside div { padding: 0px 40px 0px 40px; }
 nav { background-color: rgba(0,0,0,.6); position: relative; padding: 45px 0px 0px 180px; }
 
 
-
+/** First level menu **/
 nav ul {
 	list-style: none;
 	margin: 0; padding: 0;
@@ -25,6 +25,28 @@ nav > ul > li {
 	float: left;
 }
 
+
+/*cleafix for nav ul*/
+
+nav ul::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+
+nav ul li a {
+	display: inline-block;
+	color: #fff;
+	padding: 10px 20px;
+	text-decoration: none;
+	width: 125px;
+}
+
+
+nav ul li a:hover {
+	background-color: #339999;
+}
 
 @media screen and (max-width: 750px) {
 	
