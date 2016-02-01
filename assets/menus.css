@@ -21,9 +21,6 @@ nav ul {
 	margin: 0; padding: 0;
 }
 
-nav > ul > li {
-	float: left;
-}
 
 
 /*cleafix for nav ul*/
@@ -77,6 +74,22 @@ nav ul ul li {
 nav ul ul ul {
 	left: 100%;
 	top: 0;
+}
+
+
+/*top level*/
+
+nav > ul {
+	padding-left: 35px;
+}
+
+nav > ul > li {
+	float: left;
+}
+
+nav > ul > li > a {
+	padding: 10px 20px 15px 20px;
+	width: auto;
 }
 
 
